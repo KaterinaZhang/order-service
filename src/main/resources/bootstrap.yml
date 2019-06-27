@@ -4,13 +4,13 @@ server:
 spring:
   application:
     name: order-service
-cloud:
-  config:
-    discovery:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      fail-fast: true
       enabled: true
-      serviceId: config-server
-    fail-fast: true
-    enabled: true
 
 eureka:
   instance:
